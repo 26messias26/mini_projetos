@@ -68,14 +68,39 @@
 /* CHUVA */
 
 .chuva{
-    background: #000;
+    background: rgb(50, 190, 132);
     overflow: hidden;
+    display: block !important;
 }
 
 i{
     position: absolute;
     height: 50px;
-    background: linear-gradient(transparent,#fff);
+    background: linear-gradient(transparent,rgb(255, 255, 255));
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    animation: animeteChuva 3s linear infinite;
+}
+
+i:nth-child(3n+1){
+    background: linear-gradient(transparent, #fff);
+}
+
+i:nth-child(3n+2){
+    background: linear-gradient(transparent, #0f0);
+}
+
+i:nth-child(3n+3){
+    background: linear-gradient(transparent, #f00);
+}
+
+
+@keyframes animeteChuva{
+    0%{
+        transform: translateY(-50px) ;
+    }
+    100%{
+        transform: translateY(250px);
+    }
+    
 }
