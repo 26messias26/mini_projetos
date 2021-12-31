@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/projects.css">
 
@@ -15,9 +15,9 @@
 <body>
     <footer></footer>
     <main>
-
-        <div class="projects">
-            <div class="load1">
+        <div class=" projects">
+            <!-- CARREGANDO 1 -->
+            <div class="pj load1">
                 <span style="--i:0;"></span>
                 <span style="--i:1;"></span>
                 <span style="--i:2;"></span>
@@ -25,16 +25,64 @@
                 <span style="--i:4;"></span>
 
             </div>
-            <div class="chuva"></div>
-            <div class='menu1'>
+            <!-- CHUVA -->
+            <div class="pj chuva"></div>
 
+            <!-- MENU 1 -->
+            <div class=' pj menu1'>
+                <div class="navigate">
+                    <ul>
+                        <li class="list active">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span class="text">Home</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </span>
+                                <span class="text">Perfil</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                                </span>
+                                <span class="text">Mensagem</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="camera-outline"></ion-icon>                                </span>
+                                <span class="text">Fotos</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </span>
+                                <span class="text">Conf.</span>
+                            </a>
+                        </li>
+                        <span class="indicador"></span>
+                    </ul>
+                </div>
             </div>
-            
+
         </div>
 
     </main>
 </body>
 
-    <script src="./JS/chuva.js"></script>
+<script src="./JS/chuva.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </html>

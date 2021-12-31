@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cor-menu1: #222327;
+}
+
 .projects{
     margin: 10px 30px;
 }
 
-.projects div{
+.projects .pj{
     display: flex;
     justify-content: center;
     position: relative;

@@ -73,7 +73,7 @@
     display: block !important;
 }
 
-i{
+.chuva i{
     position: absolute;
     height: 50px;
     background: linear-gradient(transparent,rgb(255, 255, 255));
@@ -82,15 +82,15 @@ i{
     animation: animeteChuva 3s linear infinite;
 }
 
-i:nth-child(3n+1){
+.chuva i:nth-child(3n+1){
     background: linear-gradient(transparent, #fff);
 }
 
-i:nth-child(3n+2){
+.chuva i:nth-child(3n+2){
     background: linear-gradient(transparent, #0f0);
 }
 
-i:nth-child(3n+3){
+.chuva i:nth-child(3n+3){
     background: linear-gradient(transparent, #f00);
 }
 
@@ -103,4 +103,118 @@ i:nth-child(3n+3){
         transform: translateY(250px);
     }
     
+}
+
+/* MENU 1 */
+
+
+
+.menu1{
+    background: rgb(206, 206, 206);
+}
+.menu1 .navigate{
+    font-size: 13px;
+    width: 280px;
+    height: 70px;
+    background: #fff;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+}
+
+.menu1 .navigate ul {
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.menu1 .navigate ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.menu1 .navigate ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.menu1 .navigate ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--cor-menu1);
+}
+
+.menu1 .navigate ul li.active a .icon{
+
+    transform: translateY(-35px);
+}
+
+.menu1 .navigate ul li a .text{
+
+
+    position: absolute;
+    color: var(--cor-menu1);
+    font-weight: 600;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    opacity: 0;
+
+    transition: 0.5s;
+    transform: translateY(20px);
+}
+
+.menu1 .navigate ul li.active a .text{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.indicador{
+    position: absolute;
+    top: -40%;
+    width: 50px;
+    height: 50px;
+    background: #29fd53;
+    border-radius: 50%;
+    border: 3px solid rgb(206, 206, 206);
+    transition: 0.5s;
+}
+
+.indicador::before{
+    content:'';
+    position: absolute;
+    top: 57.5%;
+    left: -11px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-top-right-radius: 8px;
+    box-shadow: 0px -5px 0px 0px rgb(206, 206, 206);
+}
+
+.indicador::after{
+    content:'';
+    position: absolute;
+    top: 57.5%;
+    right: -10px;
+    width: 9px;
+    height: 9px;
+    background: transparent;
+    border-top-left-radius: 10px;
+    box-shadow: 0px -5px 0px 0px rgb(206, 206, 206);
 }
