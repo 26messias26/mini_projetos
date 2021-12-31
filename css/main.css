@@ -9,7 +9,9 @@
 }
 
 .projects{
-    margin: 10px 30px;
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .projects .pj{

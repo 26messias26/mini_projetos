@@ -218,3 +218,23 @@
     border-top-left-radius: 10px;
     box-shadow: 0px -5px 0px 0px rgb(206, 206, 206);
 }
+
+.menu1 .navigate ul li:nth-child(1).active ~ .indicador{
+    transform: translateX(calc(50px*0));
+}
+
+.menu1 .navigate ul li:nth-child(2).active ~ .indicador{
+    transform: translateX(calc(50px*1));
+}
+
+.menu1 .navigate ul li:nth-child(3).active ~ .indicador{
+    transform: translateX(calc(50px*2));
+}
+
+.menu1 .navigate ul li:nth-child(4).active ~ .indicador{
+    transform: translateX(calc(50px*3));
+}
+
+.menu1 .navigate ul li:nth-child(5).active ~ .indicador{
+    transform: translateX(calc(50px*4));
+}
