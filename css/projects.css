@@ -1,3 +1,72 @@
+/* Menu 2 */
+
+.menu2{
+    display: block !important;
+    padding: 10px;
+}
+
+.dropdawn{
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+.dropdawn input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    border-radius: 10px ;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 12px 20px;
+    
+}
+
+.dropdawn .option{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background:#fff;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* padding: 10px; */
+    overflow: hidden;
+}
+
+.dropdawn .option div{
+    cursor: pointer;
+    padding: 2px 10px;
+    border-radius: 3px;
+}
+
+.dropdawn .option div:hover{
+    background: #62baea;
+    color: #fff;
+}
+
+.dropdawn::before{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 100;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #000;
+    border-top: #fff;
+    border-right: #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+
 /* Carregamentos */
 
 .load1{
