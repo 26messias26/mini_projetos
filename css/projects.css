@@ -1,4 +1,4 @@
-/* Menu 2 */
+/* Menu 2 - */
 
 .menu2{
     display: block !important;
@@ -11,6 +11,8 @@
     width: 100%;
     height: 50px;
 }
+
+
 
 .dropdawn input{
     position: absolute;
@@ -37,12 +39,22 @@
     border-radius: 10px;
     /* padding: 10px; */
     overflow: hidden;
+    display: none;
+    font-size: 14px;
+}
+
+.dropdawn.active .option{
+    display: block;
 }
 
 .dropdawn .option div{
     cursor: pointer;
-    padding: 2px 10px;
+    padding: 3px 15px;
     border-radius: 3px;
+}
+
+.dropdawn .option div ion-icon{
+    margin-right: 10px;
 }
 
 .dropdawn .option div:hover{
@@ -54,7 +66,7 @@
     content: '';
     position: absolute;
     right: 20px;
-    top: 15px;
+    top: 18px;
     z-index: 100;
     width: 8px;
     height: 8px;
@@ -63,8 +75,16 @@
     border-right: #fff;
     transform: rotate(-45deg);
     transition: 0.5s;
+  
     pointer-events: none;
 
+
+}
+
+.dropdawn.active::before{
+    top: 22px;
+    transform: rotate(-225deg);
+    
 }
 
 /* Carregamentos */

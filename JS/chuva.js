@@ -1,3 +1,16 @@
+// MENU 2 - DROPDAWN MENU
+
+ function showMenuDrop1(valueItem){
+     document.querySelector('.textBox').value = valueItem
+ }
+
+ let dropDown = document.querySelector('.dropdawn');
+ dropDown.onclick = function(){
+     dropDown.classList.toggle('active');
+ }
+
+// CHUVA
+
 function rain() {
     let gotas = 30;
     let card = document.querySelector('.chuva')
